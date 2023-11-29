@@ -15,8 +15,10 @@ public class launch_Browase
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
+		String title = driver.getTitle();
+		System.out.println(title);
 		driver.close();
-		System.out.println("Salma");
+		
 	}
 
 }
